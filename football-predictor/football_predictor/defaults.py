@@ -1,0 +1,28 @@
+from __future__ import annotations
+
+from typing import Any, Dict
+
+
+DEFAULT_MODEL_CONFIG: Dict[str, Any] = {
+    "model_name": "v5-market-poisson",
+    "score_max_goals": 8,
+    "market_blend": 0.45,
+    "elo_goal_diff_per_100": 0.12,
+    "prob_goal_diff_scale": 1.25,
+    "knockout_total_penalty": 0.12,
+    "host_xg_bonus": 0.12,
+    "rest_day_xg_per_day": 0.03,
+    "travel_xg_penalty_per_1000km": 0.02,
+    "weather_total_penalty_hot_c": 30,
+    "weather_total_penalty": 0.08,
+    "provider_weights": {
+        "pinnacle": 1.35,
+        "bet365": 1.15,
+        "exchange": 1.25,
+        "williamhill": 1.0,
+        "macau": 0.95,
+        "average": 0.9,
+        "lottery": 0.75,
+    },
+}
+
